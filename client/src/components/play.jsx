@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-//import './play.css';  // You can create a CSS file for styles
+import './play.css';  // You can create a CSS file for styles
 
 const gridSize = 8;
 
@@ -33,11 +33,11 @@ const Play = () => {
   return (
     <div className="play-area">
       <h2>Your Ships</h2>
-      <div className="grid">
+      <div className="grid player-grid">
         {renderGrid(playerGrid, true)}
       </div>
       <h2>Opponent's Grid</h2>
-      <div className="grid">
+      <div className="grid opponent-grid">
         {renderGrid(opponentGrid, false)}
       </div>
     </div>
