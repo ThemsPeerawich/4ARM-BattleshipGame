@@ -111,4 +111,4 @@ const PlaceshipGrid = () => {
   
 };
 
-export default PlaceshipGrid;
+export default placeship;

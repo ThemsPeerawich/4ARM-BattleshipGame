@@ -44,4 +44,4 @@ const Play = () => {
   );
 };
 
-export default Play;
+export default play;
