@@ -1,0 +1,69 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    border: 2px solid black;
+    width: 640px;
+    height: 640px;
+}
+
+.square {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.ship {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.follower {
+    background-color: grey;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.horizontal {
+    border: 5px dashed rgb(247, 108, 108);
+
+}
+
+.vertical {
+    border: 5px dashed rgb(70, 3, 255);
+
+}
+
+
+.Destroyer {
+    background-color: rgb(112, 10, 207, 0.4);
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.Submarine {
+    background-color: rgb(255, 0, 0, 0.4);
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.Battlecruiser {
+    background-color: rgb(200, 255, 0, 0.4);
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+
+.Aircraftcarrier {
+    background-color: rgb(228, 183, 0, 0.4);
+    border-radius: 50%;
+    border: 2px solid black;
+}

@@ -30,6 +30,7 @@ function login({ setIsLoggedIn, isLoggedIn }) {
                 sessionStorage.setItem("userId", userID);
                 
                 // Navigate to the home page with user data
+                //navigate("/game", { state: { user: userData } });
                 navigate("/placeShip", { state: { user: userData } });
               } 
               if (result.data.message === "Invalid credentials") {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-//import "./placeshipTest.css";
+import "./placeshipTest.css";
 
 const gridSize = 8;
 const squareSize = 80;
@@ -111,4 +111,4 @@ const PlaceshipGrid = () => {
   
 };
 
-export default placeship;
+export default PlaceshipGrid;
