@@ -33,14 +33,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--small-space);
 }
 
-main,
+/* main,
 section {
   margin: var(--medium-space);
   text-align: center;
-}
+} */
 
 main {
   max-width: 35em;
@@ -107,33 +106,33 @@ header {
   text-align: center;
 }
 
-h1 {
+/* h1 {
   color: var(--oc-indigo-8);
   font-size: 38px;
-}
+} */
 
 .subtitle {
   font-size: 22px;
   color: var(--oc-indigo-4);
 }
 
-h1,
+/* h1,
 h2,
 p {
   margin: 0;
-}
+} */
 
-h1 {
+/* h1 {
   font-family: var(--header);
   text-transform: uppercase;
-}
+} */
 
 /* Headings used in board and tip box */
 
-h2 {
+/* h2 {
   color: var(--oc-red-7);
   font-family: var(--headlines);
-}
+} */
 
 /* Regular text used in subtitle and tips */
 

@@ -41,40 +41,43 @@ const register = () => {
           width={300}
         />
       </div>
-      <h1 class="font-montserrat pt-4 font-bold text-3xl text-sky-900">Sign Up</h1>
+      <div class="flex justify-center">
+      <h1 class="font-montserrat pt-4 font-bold text-3xl text-sky-900 m-2">Sign Up</h1>
+      </div>
       
-      
-      <h2>Currently online: n users</h2>
-      <h1 class="font-bold font-montserrat">Enter a nickname and password.</h1>
+      <h2 class="font-museo text-center">Currently online: n users</h2>
+      <h1 class="font-bold font-museo text-center">Enter a nickname and password.</h1>
       
       {/* Form submission logic with React */}
-      <form class="font-montserrat" id="nameForm" onSubmit={handleSubmit}>
+      <form class="font-montserrat justify-center text-center bg-white m-2 p-5 border-1 rounded-2xl shadow-lg" id="nameForm" onSubmit={handleSubmit}>
         {/* Label omitted for simplicity */}
         <input 
           type="text" 
           name="nickname" 
-          placeholder="Your nickname here" 
+          placeholder="Nickname" 
+          class="p-3 w-full max-w-80 border rounded-md border-gray-400/50"
           required 
           value={nickname} 
           onChange={(e) => setnickname(e.target.value)} // Handle input change
         />
         <br /><br />
         <input 
-          type="text" 
+          type="password" 
           name="password" 
-          placeholder="Your password here" 
+          placeholder="Password"
+          class="p-3 w-full max-w-80 border rounded-md border-gray-400/50" 
           required 
           value={password} 
           onChange={(e) => setPassword(e.target.value)} // Handle input change
         />
         <br /><br />
-        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" type="submit">Sign Up</button>
+        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none text-white rounded-full bg-sky-700 hover:bg-green-800" type="submit">Sign Up</button>
       </form>
       
 
       {/* Display error if there is one */} 
       {error && <p style={{ color: 'red' }}>{error}</p>}
-      <p class="font-montserrat font-medium text-sky-900">Already have an account? <Link class="font-bold underline" to="/login">Login</Link></p>  
+      <p class="font-museo font-medium text-sky-900">Already have an account? <Link class="font-bold underline" to="/login">Login</Link></p>  
     </div>
     </section>
   );
