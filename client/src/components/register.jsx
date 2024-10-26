@@ -36,10 +36,12 @@ const register = () => {
   return (
     <section class="relative bg-front bg-cover bg-gray-800 bg-blend-normal h-screen w-screen bg-no-repeat bg-center py-16 px-24 flex items-center justify-center">
     <div class="flex-grow-0 justify-center px-36 py-16 bg-white/70 rounded-3xl">
-      <img 
-        src={logoImg}
-        width={300}
-      />
+    <div class="flex justify-center">
+        <img 
+          src={logoImg}
+          width={300}
+        />
+      </div>
       <h1 class="font-montserrat pt-4 font-bold text-3xl text-sky-900">Sign Up</h1>
       
       
