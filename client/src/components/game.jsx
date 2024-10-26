@@ -94,21 +94,21 @@ const Game = () => {
         <h2>Count: {count}</h2>
 
         {/* Button to increment the count */}
-        <button onClick={handleIncrement} style={buttonStyle}>
+        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleIncrement} style={buttonStyle}>
           Increment
         </button>
 
         {/* Button to decrement the count */}
-        <button onClick={handleDecrement} style={buttonStyle}>
+        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleDecrement} style={buttonStyle}>
           Decrement
         </button>
 
         {/* Button to handle Win */}
-        <button onClick={handleWin} style={buttonStyle}>
+        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleWin} style={buttonStyle}>
           Win
         </button>
 
-        <button onClick={handleLose} style={buttonStyle}>
+        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleLose} style={buttonStyle}>
           Lose
         </button>
 

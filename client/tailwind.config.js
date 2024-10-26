@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
-        blanka: ['blanka', 'sans']
+        blanka: ['Blanka', 'sans'],
+        museo: ['MuseoModerno', 'sans-serif']
       },
       backgroundImage: {
         'front': "url('assets/images/front-page.png')"

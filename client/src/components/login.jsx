@@ -56,7 +56,7 @@ function login({ setIsLoggedIn, isLoggedIn }) {
       <h1 class="font-montserrat pt-4 font-bold text-3xl text-sky-900">Login</h1>
       
       {/* Form submission logic with React */}
-      <form class="font-montserrat" id="nameForm" onSubmit={handleSubmit}>
+      <form class="font-montserrat justify-center" id="nameForm" onSubmit={handleSubmit}>
         {/* Label omitted for simplicity */}
         <input 
           type="text" 
@@ -76,7 +76,7 @@ function login({ setIsLoggedIn, isLoggedIn }) {
           onChange={(e) => setPassword(e.target.value)} // Handle input change
         />
         <br /><br />
-        <button type="submit">Join Game</button>
+        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" type="submit">Join Game</button>
       </form>
       
       <p class="font-montserrat font-medium text-sky-900">Don't have an account? <Link class="font-bold underline" to="/register">Sign Up</Link></p>      

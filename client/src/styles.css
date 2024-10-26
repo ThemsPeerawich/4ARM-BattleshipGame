@@ -34,7 +34,7 @@ input[type="text"] {
 }
 
 /* Button styling */
-button {
+/* button {
     background-color: green;
     color: white;
     padding: 10px 20px;
@@ -42,12 +42,12 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-}
+} */
 
 /* Button hover effect */
-button:hover {
+/* button:hover {
     background-color: darkgreen;
-}
+} */
 
 /* Align everything centrally, spaced out */
 h2, h1, form {

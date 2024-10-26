@@ -2,7 +2,6 @@ import logoImg from '../assets/images/front-logo.png';
 import React, { useState } from 'react';
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import './styles.css'; // Ensure you have styles set up
 
 
 const register = () => {
@@ -69,7 +68,7 @@ const register = () => {
           onChange={(e) => setPassword(e.target.value)} // Handle input change
         />
         <br /><br />
-        <button type="submit">Join Game</button>
+        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" type="submit">Sign Up</button>
       </form>
       
 
