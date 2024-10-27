@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { getSocket } from '../socket';
+import logoImg from '../assets/images/front-logo.png';
+import clock from '../assets/images/clock.png';
 
 //import { WelcomeScreen } from './WelcomeScreen.jsx';
 import { Main } from './Simple/Main.jsx';
@@ -90,33 +92,54 @@ const Game = () => {
   //GAME LOGIC ------------------------------------------------------------------------------
 
   return (
-      <div style={{ textAlign: "center", marginTop: "50px" }}>
-        <h2>Count: {count}</h2>
+      <div className="flex flex-col h-screen w-screen bg-sky-400 justify-center items-center">
 
-        {/* Button to increment the count */}
-        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleIncrement} style={buttonStyle}>
-          Increment
-        </button>
+        <div class="flex justify-center p-8">
+          <img 
+            src={logoImg}
+            width={300}
+          />
+        </div>
 
-        {/* Button to decrement the count */}
-        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleDecrement} style={buttonStyle}>
-          Decrement
-        </button>
+        <div className="flex justify-center items-center pb-8 gap-3">
 
-        {/* Button to handle Win */}
-        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleWin} style={buttonStyle}>
-          Win
-        </button>
+          <img
+            src={clock}
+            width={50}
+          />
+          <div className="font-museo text-white font-black text-4xl drop-shadow-lg">
+            00:00
+          </div>
 
-        <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleLose} style={buttonStyle}>
-          Lose
-        </button>
+        </div>
 
+        <div>
 
+          <h2>Count: {count}</h2>
+          {/* Button to increment the count */}
+          <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleIncrement} style={buttonStyle}>
+            Increment
+          </button>
+
+          {/* Button to decrement the count */}
+          <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleDecrement} style={buttonStyle}>
+            Decrement
+          </button>
+
+          {/* Button to handle Win */}
+          <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleWin} style={buttonStyle}>
+            Win
+          </button>
+
+          <button className="gap-2 px-6 py-3 font-montserrat font-bold text-lg leading-none ring-4 ring-white text-white rounded-full bg-sky-700 hover:bg-green-800" onClick={handleLose} style={buttonStyle}>
+            Lose
+          </button>
+        </div>
+        
         {error && <p style={{ color: "red" }}>{error}</p>}
 
         {/* Implemented Game */}
-        <h1> Battleshiplogo</h1>
+
       
         <Main />
       
