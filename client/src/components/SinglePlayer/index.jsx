@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { WelcomeScreen } from './WelcomeScreen';
-import { Game } from './Game/Game.js';
+import { Game } from './Game/game.jsx';
 import { Header } from './Header';
 import { Footer } from './Footer';
 

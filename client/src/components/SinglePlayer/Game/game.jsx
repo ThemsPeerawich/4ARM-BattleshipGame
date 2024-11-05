@@ -304,3 +304,5 @@ export const Game = () => {
     </React.Fragment>
   );
 };
+
+export default Game ;
