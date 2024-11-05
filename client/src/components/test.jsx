@@ -1,6 +1,8 @@
 import React from 'react';
 import Game from './SinglePlayer/Game/game';
 
+import './SinglePlayer/css/style.css';
+
 const Test = () => {
   return <>
   <h1>Hello World</h1>
