@@ -15,7 +15,7 @@ import {
 const AVAILABLE_SHIPS = [
   {
     name: 'carrier',
-    length: 5,
+    length: 4,
     placed: null,
   },
   {
@@ -25,17 +25,17 @@ const AVAILABLE_SHIPS = [
   },
   {
     name: 'cruiser',
-    length: 3,
+    length: 4,
     placed: null,
   },
   {
     name: 'submarine',
-    length: 3,
+    length: 4,
     placed: null,
   },
   {
     name: 'destroyer',
-    length: 2,
+    length: 4,
     placed: null,
   },
 ];
